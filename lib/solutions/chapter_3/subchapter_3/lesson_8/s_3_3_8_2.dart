@@ -1,8 +1,15 @@
+
 import 'package:flutter/material.dart';
 
 bool isPrime(int input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  if (input <= 1) {
+    return false;
+  }else if (input % 2 == 0) {
+          return false;
+    
+  }else{
+    return true;
+  }
 }
 
 class S3382 extends StatefulWidget {
@@ -15,6 +22,8 @@ class S3382 extends StatefulWidget {
 class _S3382State extends State<S3382> {
   final TextEditingController _inputController = TextEditingController();
   String? output;
+  
+  get primeNumber => null;
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +62,7 @@ class _S3382State extends State<S3382> {
             }
             setState(() {
               output = isPrime(input) ? "Primzahl" : "Keine Primzahl";
+               
             });
           },
           child: const Text('Prüfen'),

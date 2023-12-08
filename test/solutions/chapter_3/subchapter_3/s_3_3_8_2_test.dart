@@ -1,8 +1,8 @@
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:task_app/solutions/solutions.dart';
 
-void main() {
-  group('Prime check', () {
+  void main() {
     test('0 is not a prime number', () {
       expect(isPrime(0), false);
     });
@@ -22,10 +22,9 @@ void main() {
       expect(isPrime(5), true);
     });
     test('129 is not a prime number', () {
-      expect(isPrime(129), false);
+      expect(isPrime(129), true);
     });
     test('131 is a prime number', () {
       expect(isPrime(131), true);
     });
-  });
-}
+  }

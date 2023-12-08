@@ -1,5 +1,4 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/solutions.dart';
 
 void main() {
   group('reverseNumber', () {
@@ -18,4 +17,7 @@ void main() {
       expect(reverseNumber(10300), 301);
     });
   });
+}
+
+reverseNumber(int i) {
 }

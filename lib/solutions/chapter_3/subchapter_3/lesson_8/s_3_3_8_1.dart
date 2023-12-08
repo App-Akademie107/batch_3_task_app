@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-int reverseNumber(int input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
-}
+
+
+
+
 
 class S3381 extends StatefulWidget {
   const S3381({Key? key}) : super(key: key);
@@ -65,5 +65,9 @@ class _S3381State extends State<S3381> {
   void dispose() {
     _inputController.dispose();
     super.dispose();
+  }
+  
+  int? reverseNumber(int input) {
+    return reverseNumber(input);
   }
 }
